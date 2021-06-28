@@ -1,0 +1,73 @@
+body{
+    background-color: #f4ff58;
+}
+
+#app {
+    display: grid;
+    grid-auto-rows: minmax(150px, auto);
+    font-family:'Lexend Giga', sans-serif;;
+    text-transform: uppercase;
+    justify-content: center;
+    height: auto;
+}
+
+.headline{
+    font-size: 70px;
+}
+
+label{
+    display:block;
+    font-size: 23px;
+}
+
+input{
+    display:block;
+    height: 60px;
+    width: 320px;
+    background: rgb(238, 238, 238);
+    font-size: 13px;
+    font-family: 'Raleway', sans-serif;
+    border: none;
+    text-transform:uppercase;
+}
+
+select{
+    font-size: 15px;
+    font-family: 'Raleway', sans-serif;
+}
+
+#myUL{
+    margin-top: 60px;
+    font-size: 13px;
+    font-family: 'Raleway', sans-serif;
+    text-transform:uppercase;
+}
+
+button{
+    width: fit-content;
+    height: fit-content;
+    color: black;
+    font-size: $font-size-buttons;
+    font-family: 'Lexend Giga', sans-serif;;
+    text-transform:uppercase;
+    box-shadow: 2px 4px 5px #444;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+#button1{
+    margin-top: 10px;
+}
+
+#button1:hover {
+    background-color:  #c9c9c9;
+}
+
+footer{
+    font-family: 'Lexend Giga', sans-serif;;
+    font-size: 13px;
+    color: rgb(0, 0, 0);
+    text-transform:uppercase;
+    text-align: center;
+    margin: 0;
+}
