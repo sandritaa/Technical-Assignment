@@ -107,7 +107,7 @@ function findMostCommonSpecies(animalData) {
 
     return mostCommon
     
-}
+} 
 
 // Function to find oldest animal
 function findOldest(animalData, mostCommon) {
