@@ -1,17 +1,11 @@
 # Technical-Assignment
 
-Please include a README document that details the input format for your program.
-This document will be used by us to create test case data to be used during your interview, so be thorough and precise.
-Any failure due to incorrectly documented input formats will be considered as a functional failure of the program when conducting your interview.
-Please note that in most cases your program should allow for up to 100 pieces of data to be input simultaneously, and handle that accordingly within your program.
-Further details are provided in the Project Requirements.
-
 The input used by the program is an array of objects.
 
 The main function to call is called animal. This accepts one argument which is the array of objects and returns a string which the ouput required for the exercise.
 
 # Input definition
-To call the program generate an input which is an array of object. Each object represents an animal and requires 4 fields:
+To call the program generate an input which is an array of objects. Each object represents an animal and requires 4 fields:
 1) name
 2) birthday
 3) color
