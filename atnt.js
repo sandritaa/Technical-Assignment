@@ -1,66 +1,70 @@
+//----------------------------------------------------------------------------
+// Input format example 
+//----------------------------------------------------------------------------
+
+
 // Create input to test function
 input = [];
 
 input[0] = {
-    name: 'Tommaso',
+    name: 'Hunter',
     birthday: '04/30/1990',
     species: 'cat',
     color: 'white'
 }
 
 input[1] = {
-    name: 'Sandra',
-    birthday: '12/17/1991',
+    name: 'Lily',
+    birthday: '02/16/1982',
     species: 'dog',
     color: 'yellow'
 }
 
 input[2] = {
-    name: 'Kathleen',
-    birthday: '12/17/1989',
+    name: 'Principe',
+    birthday: '03/05/1989',
     species: 'sheep',
-    color: 'brown'
+    color: 'grey'
 }
 
 input[3] = {
-    name: 'Jesse',
-    birthday: '12/17/1995',
+    name: 'Owen',
+    birthday: '12/17/1920',
     species: 'sheep',
     color: 'brown'
 }
 
-// input[4] = {
-//     name: 'Tommaso',
-//     birthday: '04/30/1992',
-//     species: 'cat',
-//     color: 'white'
-// }
 
-// input[5] = {
-//     name: 'Sandra',
-//     birthday: '12/17/1991',
-//     species: 'dog',
-//     color: 'yellow'
-// }
+//----------------------------------------------------------------------------
+// Function call example 
+//----------------------------------------------------------------------------
 
+let output = animal(input);
+
+console.log(output);
+
+
+//----------------------------------------------------------------------------
+// Define functions
+//----------------------------------------------------------------------------
 
 // Core function
 function animal(animalData) {
 
-    // Use the function we wrote to find most common species
-    mostCommon = findMostCommonSpecies(animalData);
+    // Use function to write find most common species
+    let mostCommon = findMostCommonSpecies(animalData);
 
     // Find the oldest animal of the most common species
-    oldestAnimal = findOldest(animalData, mostCommon)
+    let oldestAnimal = findOldest(animalData, mostCommon);
 
     // Create the output as requested
     let animalSound;
     if (oldestAnimal.species == 'cat') {
         animalSound = "meow";
     } else if (oldestAnimal.species == 'dog') {
-        animalSound = "woof";
+        animalSound = "bark";
     } else if (oldestAnimal.species == 'sheep') {
-        animalSound = "baaa";
+        animalSound = "baa";
     }
 
     let output = oldestAnimal.name + ', the ' + oldestAnimal.color + ' ' + oldestAnimal.species + ' says ' + animalSound + '!'
@@ -68,7 +72,7 @@ function animal(animalData) {
 
 }
 
-// Functino to find most common species
+// Function to find most common species
 function findMostCommonSpecies(animalData) {
 
     let bucketCat = [];
@@ -120,8 +124,3 @@ function findOldest(animalData, mostCommon) {
 
     return animalData[oldest]
 }
-
-// Run function
-console.log(input)
-output = animal(input)
-console.log(output)
